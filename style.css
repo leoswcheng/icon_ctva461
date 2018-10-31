@@ -1,0 +1,49 @@
+/** 
+*Document Grid 
+*
+*Create a three column grid for our icons.
+*/
+
+
+.grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-gap:1rem;
+	text-align:center;
+}
+
+ .card {
+      
+        position: relative;
+        display: inline-block;
+    
+    }
+  
+    .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    .card:hover .img-top {
+        display: inline;
+    }
+
+    .card .img-btm {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    .card:hover .img-btm {
+        display: inline;
+    }
+.animation .img-animation{
+	animation-play-state:paused;
+}
+
+.animation:hover .img-animation {
+	animation-play-state: running;
+}
