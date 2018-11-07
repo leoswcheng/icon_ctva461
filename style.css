@@ -1,49 +1,155 @@
-/** 
-*Document Grid 
-*
-*Create a three column grid for our icons.
+/**
+* Document Grid
+* Creates a three column grid for our icons.
 */
 
-
 .grid{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr ;
-	grid-gap:1rem;
-	text-align:center;
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:1rem;
+
 }
 
- .card {
-      
-        position: relative;
-        display: inline-block;
-    
-    }
-  
-    .card .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-
-    }
-    .card:hover .img-top {
-        display: inline;
-    }
-
-    .card .img-btm {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-
-    }
-    .card:hover .img-btm {
-        display: inline;
-    }
-.animation .img-animation{
-	animation-play-state:paused;
+<!------AnimatedIcons-------->
+.container{
+    margin:0 auto;
+    max-width:360px;
+}
+.search .search_animated{
+    display:none;
+}
+.search:hover .search{
+    display:none;
+}
+.search:hover .search_animated{
+    display:block;
 }
 
-.animation:hover .img-animation {
-	animation-play-state: running;
+.wifi .wifi_animated{
+    display:none;
+}
+.wifi:hover .wifi{
+    display:none;
+}
+.wifi:hover .wifi_animated{
+    display:block;
+}
+
+.bell .bell_animated{
+    display:none;
+}
+.bell:hover .bell{
+    display:none;
+}
+.bell:hover .bell_animated{
+    display:block;
+}
+
+.talking .talking_animated{
+    display:none;
+}
+.talking:hover .talking{
+    display:none;
+}
+.talking:hover .talking_animated{
+    display:block;
+}
+
+.question .question_hovered{
+    display:none;
+}
+
+.question:hover .question{
+    display:none;
+}
+.question:hover .question_hovered{
+    display:block;
+}
+
+.plus .plus_hovered{
+    display:none;
+}
+.plus:hover .plus{
+    display:none;
+}
+.plus:hover .plus_hovered{
+    display:block;
+}
+.minus .minus_hovered{
+    display:none;
+}
+.minus:hover .minus{
+    display:none;
+}
+.minus:hover .minus_hovered{
+    display:block;
+}
+
+.up .up_animated{
+    display:none;
+}
+.up:hover .up{
+    display:none;
+}
+.up:hover .up_animated{
+    display:block;
+}
+
+.down .down_animated{
+    display:none;
+}
+.down:hover .down{
+    display:none;
+}
+.down:hover .down_animated{
+    display:block;
+}
+
+.loading .loading_animated{
+    display:none;
+}
+.loading:hover .loading{
+    display:none;
+}
+.loading:hover .loading_animated{
+    display:block;
+}
+
+.lock .lock_animated{
+    display:none;
+}
+.lock:hover .lock{
+    display:none;
+}
+.lock:hover .lock_animated{
+    display:block;
+}
+
+.downloading .downloading_animated{
+    display:none;
+}
+.downloading:hover .downloading{
+    display:none;
+}
+.downloading:hover .downloading_animated{
+    display:block;
+}
+
+.display .display_hovered{
+    display:none;
+}
+.display:hover .display{
+    display:none;
+}
+.display:hover .display_hovered{
+    display:block;
+}
+.lens .lens_hovered{
+    display:none;
+}
+.lens:hover .lens{
+    display:none;
+}
+.lens:hover .lens_hovered{
+    display:block;
 }
